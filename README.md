@@ -275,14 +275,3 @@ Se puede probar la API con:
 Isabela Díaz Acosta
 Gabriela Bejarano
 
-```
-
----
-
-Si quieres, puedo ahora:
-
-- Ajustarlo exactamente a tu estructura real si me pasas el árbol de carpetas.
-- Añadir sección de desarrollo local con `npm install` y `npm start`.
-- Añadir ejemplo de prueba con curl.
-- Hacer una versión más técnica aún (tipo repositorio profesional de portafolio).
-```
