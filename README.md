@@ -11,7 +11,7 @@ La aplicación permite:
 
 ---
 
-# Arquitectura General
+## Arquitectura General
 
 Flujo:
 
@@ -27,7 +27,7 @@ Componentes:
 
 ---
 
-# Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 
@@ -63,9 +63,9 @@ k8s-app/
 
 ---
 
-# Backend API
+## Backend API
 
-## Base Path
+### Base Path
 
 ```
 
@@ -155,7 +155,7 @@ Respuesta:
 
 ---
 
-# Lógica Interna del Backend
+## Lógica Interna del Backend
 
 El backend:
 
@@ -164,7 +164,7 @@ El backend:
 * Implementa validaciones básicas.
 * Maneja errores con códigos HTTP apropiados.
 
-## Simulación de carga
+### Simulación de carga
 
 En el endpoint `POST /tasks` se incluye un doble bucle anidado para generar consumo controlado de CPU:
 
@@ -180,7 +180,7 @@ Esto permite realizar pruebas de carga realistas.
 
 ---
 
-# Base de Datos
+## Base de Datos
 
 Tabla principal: `tasks`
 
@@ -192,7 +192,7 @@ Campos:
 
 ---
 
-# Frontend
+## Frontend
 
 El frontend:
 
@@ -203,7 +203,7 @@ El frontend:
 
 ---
 
-# Variables de Entorno
+## Variables de Entorno
 
 El backend requiere:
 
@@ -220,7 +220,7 @@ Estas variables se gestionan mediante ConfigMap y Secret en Kubernetes.
 
 ---
 
-# Docker
+## Docker
 
 Cada componente incluye su propio Dockerfile.
 
@@ -233,7 +233,7 @@ docker build -t frontend .
 
 ---
 
-# Kubernetes
+## Kubernetes
 
 Para desplegar la infraestructura:
 
@@ -251,7 +251,7 @@ kubectl get ingress
 
 ---
 
-# Escalabilidad
+## Escalabilidad
 
 El backend incluye:
 
@@ -260,7 +260,7 @@ El backend incluye:
 
 ---
 
-# Pruebas
+## Pruebas
 
 Se puede probar la API con:
 
@@ -270,7 +270,7 @@ Se puede probar la API con:
 
 ---
 
-# Autoras
+## Autoras
 
 Isabela Díaz Acosta
 Gabriela Bejarano
